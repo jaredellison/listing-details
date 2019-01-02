@@ -32,11 +32,11 @@ class App extends React.Component {
       });
     });
   }
-  
+
   showModal() {
     this.setState({ show: true });
   }
-  
+
   hideModal() {
     this.setState({ show: false });
   }
@@ -60,4 +60,4 @@ class App extends React.Component {
 
 }
 
-ReactDOM.render(<App />, document.getElementById('app'));
+ReactDOM.render(<App />, document.getElementById('details-container'));
