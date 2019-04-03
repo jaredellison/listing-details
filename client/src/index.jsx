@@ -29,17 +29,12 @@ class App extends React.Component {
     });
   }
 
-<<<<<<< HEAD
-  handleClick() {
-    this.setState({ clicks: this.state.clicks + 1 });
-=======
   showModal() {
     this.setState({ show: true });
   }
 
   hideModal() {
     this.setState({ show: false });
->>>>>>> Change id of react component container
   }
 
   render() {
@@ -62,8 +57,4 @@ class App extends React.Component {
   // data-popuptext="Want to stay updated?"
 }
 
-<<<<<<< HEAD
 ReactDOM.render(<App />, document.getElementById("details-container"));
-=======
-ReactDOM.render(<App />, document.getElementById('details-container'));
->>>>>>> Change id of react component container

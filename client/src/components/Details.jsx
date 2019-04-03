@@ -117,19 +117,13 @@ class Details extends React.Component {
                 This sale has been saved by {detail.stars} users.
               </div>
               <div className="problem">
-                See a problem with this listing? Report it{" "}
-                <span className="blue_text">here</span>
+                <p>
+                See a problem with this listing? Report it <span onClick={this.showProblemModal} className="blue_text">here</span>.
+                </p>
                 <ProblemModal
                   show={this.state.showProblem}
                   handleClose={this.hideProblemModal}
                 />
-                <button
-                  className="problem-btn"
-                  type="button"
-                  onClick={this.showProblemModal}
-                >
-                  .
-                </button>
               </div>
               <div className="realtor">
                 Listing by {detail.realty}, Limited Liability Broker, 660

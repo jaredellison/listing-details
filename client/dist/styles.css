@@ -118,19 +118,15 @@ ul {
   text-align: center;
 }
 
-/* .bad-listing-modal {
-  position: fixed;
-  background: white;
-  width: 40%;
-  height: 30%;
-  top:50%;
-  left:50%;
-  transform: translate(-50%,-50%);
-  z-index: 100;
-} */
+
+.bad-listing-line:hover{
+  text-decoration: underline;
+  cursor: pointer;
+  color: #032765;
+}
 
 .bad-listing-line {
-  margin-top: 20px;
+  line-height: 2em;
 }
 
 .modal {
@@ -147,11 +143,15 @@ ul {
   position: fixed;
   background: white;
   width: 40%;
-  height: 60%;
   top:50%;
   left:50%;
   transform: translate(-50%,-50%);
   z-index: 100;
+  text-align: center;
+}
+
+.modal-main button {
+  margin: 1em;
 }
 
 .modal-content {
@@ -172,19 +172,13 @@ ul {
   color: #FFF;
   min-height: 15px;
   text-align: center;
-}
-
-.modal-body {
-  padding-left: 20px;
-  padding-top: 20px;
-  padding-right: 20px;
+  margin-bottom: 1em;
 }
 
 .navbar {
   font-weight: bold;
   background-color: #032765;
   border-color: #032765;
-  /* color: #FFF; */
   min-height: 15px;
   margin-bottom: 0;
   border: 1px solid transparent;
@@ -342,7 +336,7 @@ ul {
 }
 
 .popup .top {
-  min-width:200px; 
+  min-width:200px;
   top:-20px;
   left:50%;
   transform:translate(-50%, -100%);
@@ -481,7 +475,7 @@ ul {
   padding: 0 12px;
   max-width: 130px;
   text-align: left;
-  
+
 }
 
 /* .star {
