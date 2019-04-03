@@ -54,7 +54,6 @@ class App extends React.Component {
       </div>
     );
   }
-  // data-popuptext="Want to stay updated?"
 }
 
-ReactDOM.render(<App />, document.getElementById("details-container"));
+ReactDOM.render(<App />, document.getElementById('details-container'));
