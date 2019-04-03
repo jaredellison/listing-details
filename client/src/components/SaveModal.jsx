@@ -33,11 +33,13 @@ const SaveModal = ({ handleClose, show }) => {
             <div className="terms_use">
               I accept StreetBreezy's{" "}
               <span className="blue_text">Terms of Use</span>
+              <div>
+                <button onClick={handleClose}>close</button>
+              </div>
             </div>
           </div>
         </div>
 
-        <button onClick={handleClose}>close</button>
       </section>
     </div>
   );
