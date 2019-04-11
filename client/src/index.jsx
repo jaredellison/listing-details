@@ -22,7 +22,6 @@ class App extends React.Component {
     id = parseInt(id.match(/\d+/g));
 
     Axios.get(`/api/details/${id}`).then(({ data }) => {
-      console.log(data);
       this.setState({
         details: data
       });
