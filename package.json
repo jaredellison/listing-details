@@ -5,12 +5,14 @@
   "main": "webpack.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server/index.js",
-    "dev-react": "webpack -d --watch"
+    "start-dev": "(mongod > /dev/null & ) && (nodemon server/index.js)",
+    "start": "(mongod > /dev/null & ) && (node server/index.js)",
+    "build-dev": "webpack -d --watch",
+    "build": "webpack -p"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Team-Elysium/listing-details.git"
+    "url": "https://github.com/Team-Elysium/listing-details.git"
   },
   "author": "",
   "license": "ISC",
@@ -21,13 +23,15 @@
   "dependencies": {
     "axios": "^0.18.0",
     "body-parser": "^1.18.3",
+    "compression": "^1.7.3",
     "express": "^4.16.4",
     "faker": "^4.1.0",
     "fs": "0.0.1-security",
     "jquery": "^3.3.1",
     "mongoose": "^5.4.0",
     "morgan": "^1.9.1",
-    "nodemon": "^1.18.9"
+    "nodemon": "^1.18.9",
+    "react-modal": "^3.8.1"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
