@@ -5,8 +5,9 @@
   "main": "webpack.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server/index.js",
-    "dev-build": "webpack -d --watch",
+    "start-dev": "(mongod > /dev/null & ) && (nodemon server/index.js)",
+    "start": "(mongod > /dev/null & ) && (node server/index.js)",
+    "build-dev": "webpack -d --watch",
     "build": "webpack -p"
   },
   "repository": {
